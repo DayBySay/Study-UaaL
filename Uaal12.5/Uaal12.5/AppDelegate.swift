@@ -6,14 +6,14 @@
 //
 
 import UIKit
+import UnityFramework
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        unityFrameworkLoad(launchOptions: launchOptions)
         return true
     }
 
@@ -31,6 +31,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
 }
 
+func unityFrameworkLoad(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
+    if let unity = unityFramework() {
+        if unity.appController() == nil {
+            var header = _mh_execute_header
+            unity.setExecuteHeader(&header)
+        }
+        unity.setDataBundleId("com.unity3d.framework")
+        unity.runEmbedded(withArgc: CommandLine.argc, argv: CommandLine.unsafeArgv, appLaunchOpts: launchOptions)
+    }
+}
+
+func unityFramework() -> UnityFramework? {
+    let path = "\(Bundle.main.bundlePath)/Frameworks/UnityFramework.framework"
+    guard let bundle = Bundle(path: path) else { return nil }
+    if !bundle.isLoaded {
+        bundle.load()
+    }
+    return bundle.principalClass?.getInstance()
+}
