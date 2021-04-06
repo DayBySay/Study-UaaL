@@ -9,14 +9,21 @@ import UIKit
 import UnityFramework
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var unityContainerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         if let unity = unityFramework() {
-            view.addSubview(unity.appController()!.rootView)
+            unityContainerView.addSubview(unity.appController()!.rootView)
+        }
+    }
+    
+    @IBAction func counterClockwise(_ sender: Any) {
+        if let unity = unityFramework() {
+            unity.sendMessageToGO(withName: "Canvas", functionName: "Counterclockwise", message: "hoge")
         }
     }
 }
