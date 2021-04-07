@@ -15,8 +15,8 @@
 		19BD19BD261C311D00041308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BD19BB261C311D00041308 /* LaunchScreen.storyboard */; };
 		19BD19C8261C311D00041308 /* Uaal12_5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BD19C7261C311D00041308 /* Uaal12_5Tests.swift */; };
 		19BD19D3261C311D00041308 /* Uaal12_5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BD19D2261C311D00041308 /* Uaal12_5UITests.swift */; };
-		19BD19FE261C481F00041308 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BD19FC261C481C00041308 /* UnityFramework.framework */; };
-		19BD19FF261C481F00041308 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19BD19FC261C481C00041308 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19BD1AEA261D796800041308 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BD1AE6261D793E00041308 /* UnityFramework.framework */; };
+		19BD1AEB261D796800041308 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19BD1AE6261D793E00041308 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				19BD19FF261C481F00041308 /* UnityFramework.framework in Embed Frameworks */,
+				19BD1AEB261D796800041308 /* UnityFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +65,7 @@
 		19BD19CE261C311D00041308 /* Uaal12.5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Uaal12.5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BD19D2261C311D00041308 /* Uaal12_5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uaal12_5UITests.swift; sourceTree = "<group>"; };
 		19BD19D4261C311D00041308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19BD19FC261C481C00041308 /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = "<group>"; };
+		19BD1AE6261D793E00041308 /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BD19FE261C481F00041308 /* UnityFramework.framework in Frameworks */,
+				19BD1AEA261D796800041308 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 		19BD19AF261C311C00041308 /* Uaal12.5 */ = {
 			isa = PBXGroup;
 			children = (
-				19BD19FC261C481C00041308 /* UnityFramework.framework */,
+				19BD1AE6261D793E00041308 /* UnityFramework.framework */,
 				19BD19B0261C311C00041308 /* AppDelegate.swift */,
 				19BD19B2261C311C00041308 /* SceneDelegate.swift */,
 				19BD19B4261C311C00041308 /* ViewController.swift */,

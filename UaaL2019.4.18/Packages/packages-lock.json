@@ -66,6 +66,13 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.yasirkula.nativegallery": {
+      "version": "https://github.com/yasirkula/UnityNativeGallery.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c3137fac8e3a5f1523eec250db3c92614bb34cda"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
